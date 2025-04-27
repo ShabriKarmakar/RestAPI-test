@@ -22,7 +22,7 @@ public class Controller {
 
     @PostMapping("/saveList")
     public List<Object> saveList(@RequestBody List<Object> objectList) {
-        System.out.println("Test post call");
+        System.out.println("Test post call" + objectList.toString());
         return objectList;
     }
 }
