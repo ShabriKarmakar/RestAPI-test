@@ -2,6 +2,7 @@ package org.example;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -23,7 +24,7 @@ public class Controller {
     @PostMapping("/saveList")
     public List<Object> saveList(@RequestBody List<Object> objectList) {
         System.out.println("Test post call" + objectList.toString());
-        System.out.println("Testing");
-        return objectList;
+
+            return objectList;
     }
 }
